@@ -68,10 +68,6 @@ const config = {
 						urlPattern: /[.]css$/,
 					}
 					,{
-						handler: 'cacheFirst',
-						urlPattern: /[.]html$/,
-					}
-					,{
 						handler : 'cacheFirst'
 						,urlPattern : /\//
 					}

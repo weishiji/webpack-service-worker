@@ -287,7 +287,6 @@ self.addEventListener('fetch', function(event) {
 
 toolbox.router.get(/[.]js$/, toolbox.cacheFirst, {});
 toolbox.router.get(/[.]css$/, toolbox.cacheFirst, {});
-toolbox.router.get(/[.]html$/, toolbox.cacheFirst, {});
 toolbox.router.get(/\//, toolbox.cacheFirst, {});
 
 

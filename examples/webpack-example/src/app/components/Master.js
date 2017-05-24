@@ -62,9 +62,11 @@ class Master extends Component {
 			root: {
 				paddingTop: spacing.desktopKeylineIncrement,
 				minHeight: 400,
+				paddingBottom : spacing.desktopKeylineIncrement,
 			},
 			content: {
 				margin: spacing.desktopGutter,
+				
 			},
 			contentWhenMedium: {
 				margin: `${spacing.desktopGutter * 2}px ${spacing.desktopGutter * 3}px`,

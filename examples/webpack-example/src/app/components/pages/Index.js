@@ -59,7 +59,7 @@ class Index extends Component{
 			<div style={styles.root}>
 				<Title render={(previousTitle) => `Required Knowledge - ${previousTitle}`} />
 				<GridList style={styles.gridList}
-				          cols={4}
+				          cols={3}
 				>
 					{this.props.products.map((tile) => (
 						<GridTile

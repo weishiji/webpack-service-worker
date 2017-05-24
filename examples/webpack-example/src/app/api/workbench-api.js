@@ -67,7 +67,11 @@ export function getMainData(){
 		}
 	];
 
-	store.dispatch(workBenchAction.getWorkBenchDataSuccess(tilesData))
+	//store.dispatch(workBenchAction.getWorkBenchDataSuccess(tilesData))
+	return  axios.get('/api/4/news/latest')
+		.then((dt) => {
+			console.log(dt)
+		})
 	/*return axios.get(utils.kindomUrl('/my/info'))
 		.then((dt) => {
 			store.dispatch(userActions.getUsersSuccess(dt['data']))

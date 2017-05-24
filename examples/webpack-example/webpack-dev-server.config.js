@@ -30,6 +30,14 @@ const config = {
     port: 3000,
     // Required for webpack-dev-server.
     outputPath: buildPath,
+    proxy : {
+      //"/api" : "http://news-at.zhihu.com"
+      "/api/*": {
+        target: "http://news-at.zhihu.com",
+        changeOrigin : true,
+        secure: false
+      }
+    }
   },
   devtool: 'eval',
   // Output file config

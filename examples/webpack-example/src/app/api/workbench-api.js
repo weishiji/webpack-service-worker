@@ -70,7 +70,8 @@ export function getMainData(){
 	//store.dispatch(workBenchAction.getWorkBenchDataSuccess(tilesData))
 	return  axios.get('/api/4/news/latest')
 		.then((dt) => {
-			console.log(dt)
+			//console.log(dt)
+			store.dispatch(workBenchAction.getWorkBenchDataSuccess(dt['data']['stories']))
 		})
 	/*return axios.get(utils.kindomUrl('/my/info'))
 		.then((dt) => {

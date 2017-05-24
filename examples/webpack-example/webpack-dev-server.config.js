@@ -32,8 +32,14 @@ const config = {
     outputPath: buildPath,
     proxy : {
       //"/api" : "http://news-at.zhihu.com"
-      "/api/*": {
-        target: "http://news-at.zhihu.com",
+      "/rest/*": {
+        //target: "http://news-at.zhihu.com",
+        target : "https://www.stylewe.com",
+        changeOrigin : true,
+        secure: false
+      }
+      ,"/image/*" : {
+        target : "https://www.stylewe.com",
         changeOrigin : true,
         secure: false
       }

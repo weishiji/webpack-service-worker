@@ -68,10 +68,11 @@ export function getMainData(){
 	];
 
 	//store.dispatch(workBenchAction.getWorkBenchDataSuccess(tilesData))
-	return  axios.get('/api/4/news/latest')
+	//return  axios.get('/api/4/news/latest')
+	return axios.get('/rest/product?start=0&limit=10')
 		.then((dt) => {
-			//console.log(dt)
-			store.dispatch(workBenchAction.getWorkBenchDataSuccess(dt['data']['stories']))
+			//console.log(dt,'hello world')
+			store.dispatch(workBenchAction.getWorkBenchDataSuccess(dt['data']))
 		})
 	/*return axios.get(utils.kindomUrl('/my/info'))
 		.then((dt) => {

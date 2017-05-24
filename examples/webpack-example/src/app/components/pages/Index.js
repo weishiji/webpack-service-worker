@@ -63,14 +63,14 @@ class Index extends Component{
 				>
 					{this.props.products.map((tile) => (
 						<GridTile
-							key={tile.id}
-							title={tile.title}
+							key={tile.product_id}
+							title={tile.name}
 							actionIcon={<IconButton><StarBorder color="rgb(0, 188, 212)" /></IconButton>}
 							titleStyle={styles.titleStyle}
 							titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
 							onTouchTap={()=>this._handlerAddProduct()}
 						>
-							<img src={tile.images[0]} />
+							<img src={tile.image} />
 						</GridTile>
 					))}
 				</GridList>

@@ -27,7 +27,7 @@ const config = {
     devtool: 'eval',
     hot: true,
     inline: true,
-    port: 3000,
+    port: 3030,
     // Required for webpack-dev-server.
     outputPath: buildPath,
     proxy : {
@@ -63,6 +63,8 @@ const config = {
 			{
 				cacheId: 'm-ui',
 				filename: __dirname + '/src/www/my-service-worker.js',
+        //importScripts : [__dirname + '/src/www/pwa-addon.js'],
+        importScripts : ['./pwa-addon.js'],
 				maximumFileSizeToCacheInBytes: 4194304,
 				minify: false,
 				runtimeCaching: [{

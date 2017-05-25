@@ -2,6 +2,7 @@ import React, {Component, PropTypes} from 'react';
 import Title from 'react-title-component';
 import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
+
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import { connect } from 'react-redux';
 
@@ -23,7 +24,6 @@ const styles = {
 	titleStyle: {
 		color: 'rgb(0, 188, 212)',
 	},
-
 };
 
 

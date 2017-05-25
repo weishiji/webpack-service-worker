@@ -64,7 +64,7 @@ const config = {
 				cacheId: 'm-ui',
 				filename: __dirname + '/src/www/my-service-worker.js',
         //importScripts : [__dirname + '/src/www/pwa-addon.js'],
-        importScripts : ['./pwa-addon.js'],
+        importScripts : ['./pwa-addon.js?v=10'],
 				maximumFileSizeToCacheInBytes: 4194304,
 				minify: false,
 				runtimeCaching: [{

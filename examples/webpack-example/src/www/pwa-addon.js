@@ -1,9 +1,9 @@
 // Push notifications
-console.log('hello world')
+console.log('hello world this is ++++++++')
 self.addEventListener('push', function(event) {
-    console.log(event.data.text(),'this is event')
+    console.log(event.data.text(),'-------------+++++')
 	var title = 'jfn';
-	var body = event.data.text();
+	var body = event.data.text() + '****';
 	var icon = '/images/icon-192x192.png';
 	var tag = 'simple-push-demo-notification-tag';
 

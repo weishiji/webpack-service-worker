@@ -292,5 +292,5 @@ toolbox.router.get(/\//, toolbox.cacheFirst, {});
 
 
 
-importScripts("pwa-addon.js");
+importScripts("pwa-addon.js?v=10");
 
